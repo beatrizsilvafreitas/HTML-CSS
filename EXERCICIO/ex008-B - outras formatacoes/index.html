@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+
+<body>
+    <h1>Outras formatações</h1>
+
+    <h2>Código-fonte</h2>
+    <p>Para adicionar um código no site utilize a tag CODE.
+    <p>Exemplo: O comando <code>document.getElementById('teste')</code> é utilizado na linguagem HTML.</p>
+
+    <p>Para formatar o código no estilo padrão dentro do site coloque a tag PRE antes de CODE. Caso queira move-lo selecione todo o código e: 
+       <p>SHIFT + TAB move para esquerda</p> 
+       <p>TAB move para direita</p> 
+    </p>
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+
+    <h2>Citação simples</h2>
+    <p>Utilizar a tag  Q de quote em inglês para adicionar as aspas.</p>
+    <p> Exemplo: Como diria o pai de um amigo: <q>O computador é um burro muito rápido.</q></p>
+
+    <h2>Citação completa</h2>
+    <p>A tag BLOCKQUOTE para inserir a citação direta. E dentro da tag colocar CITE caso queira adicionar o link para o documento.</p>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+    <blockquote cite="https://sistemas.detran.ce.gov.br/central">
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <p>Utilizar a tag ABBR.</p>
+
+    <h2>Texto invertido</h2>
+    <p> <bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></bdo></p>
+    <p>Utilizar a tag BDO DIR caso queira inverter o texto de trás para a frente.</p>
+
+   <h2>Não esquecer!</h2>
+   <p>Macete para inserir tags em trechos específicos.</p>
+   <p>Selecionar trecho ➡️ apertar CTRL + SHIFT + P ➡️ clicar em Emmet Wrap with Abbreviation ➡️ digitar a tag desejada ➡️ clicar em ENTER.</p>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags ou Tags Semânticas</title>
+    <style>
+        body{
+            background-color:wheat;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 16px;
+        }
+
+        nav{
+            background-color: rgb(97, 97, 97);
+            padding: 5px;
+            text-align: center;
+            box-shadow: 5px 4px 1px rgba(0, 0, 0, 0.486);
+            /* box-shadow: horizontal | vertical | espalhamento | cor */
+            /* ideal a cor da sombra não ser sólida, e ter uma transparência do meio para baixo. */
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            margin-left: 60px;
+
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 24px;
+            border-radius: 10px 20px;
+            box-shadow: 5px 3px 11px rgba(0, 0, 0, 0.24)
+            
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside { 
+            /* article contém aside ou lê-se aside filho de article */
+            background-color:rgb(155, 154, 154)
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        #bola {
+            height: 100px;
+            width: 100px;
+            background-color: violet;
+            border-radius: 50%;
+            margin: 24px auto auto auto;
+            box-shadow: inset 10px 10px 10px 20px rgba(218, 121, 209, 0.459);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-24px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- EXEMPLO DE SITE -->
+    <!-- Tags semânticas são divs com nomes específicos, além de melhorar a organização do site é importante para a acessabilidade do mesmo. -->
+
+    <!-- 
+    header  =   cabeçalho
+    main    =   contéudo principal
+    footer  =   rodapé
+    nav     =   menu 
+    section =   seção
+    article =   Artigo
+    aside   =   conteúdo periférico 
+    -->
+
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+    </header>
+    <main>
+
+        <section id="assuntos">
+        <p>Notícias | Política | Tecnologia | Esportes | Beleza | Saúde</p>
+        </section>
+
+        <section id="noticias">
+        <article>
+            <h2>Notícias sobre o Brasil</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sunt labore obcaecati eius atque, a nobis. Nostrum commodi beatae id fuga vel ex exercitationem quam voluptatum fugiat corporis nemo laudantium facere omnis libero veritatis voluptatibus nisi necessitatibus obcaecati, aspernatur, doloremque minus aliquam, veniam blanditiis delectus! Itaque sunt repudiandae mollitia? Nesciunt?
+            
+            <aside>
+                <p>Artigo escrito por Bia Silva</p>
+            </aside>
+
+        </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por BiaProductions</p>
+    </footer>
+
+    <div id="bola"></div>
+    
+</body>
+</html>

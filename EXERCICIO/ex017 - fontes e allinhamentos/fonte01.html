@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: justify;
+            font-size: 16px;
+            /* 
+            Medidas Absolutas: cm, mm, in(polegada), px, pt (ponto), pc (paica)
+            Medidas Relativas:
+                em	->	relativo ao tamanho natural da fonte
+                ex	->	relativo a altura x da fonte
+                rem	->	tipo em, mas relativo a fonte configurada no body
+                vw	->	relativo a largura da view port
+                vh	->	relativo a altura da view port
+                %	->	porcentagem
+            Recomendação w3c:  "px" ou "em"
+            Altura padrão:  16px ou 1em */
+
+            font-weight: normal;
+            /* lighter normal bold bolder */
+            /* numéricas 100 (lighter) a 900 (bolder) */
+            
+            font-style: normal;
+            /* italic normal */
+
+            /* text-decoration: underline; */
+            /* sublinhado */
+        }
+        
+        h1{
+            /* font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic; */
+
+            /* shorthand : simplifica todo esse código em uma linha
+            font-style --> font-weight --> font-size --> font-family */
+
+            font: italic bolder 3em Arial, Helvetica, sans-serif;
+
+        }
+
+        h2 {
+            font: italic bold 2em Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, nemo placeat. Eaque quo voluptatum harum neque ullam officiis ab totam, laudantium atque consectetur aliquid deleniti laborum illum reprehenderit recusandae! Officiis beatae impedit repellat tempore, possimus nobis modi incidunt omnis optio eveniet minus atque enim quo totam iure, saepe repudiandae! Accusamus tempore nulla praesentium maxime, officia, iste ducimus est animi soluta obcaecati numquam magni, porro qui corrupti saepe distinctio laudantium modi fuga asperiores omnis rem recusandae aliquam? Distinctio quia animi voluptatibus. Sint consequuntur libero laboriosam asperiores perferendis, recusandae dolor, rerum, sit cupiditate molestias fuga est animi maxime quas! Error, dolorum quae?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, quidem iste fugit cum enim at, amet voluptas a dignissimos molestias adipisci sint sit ab! Nemo, praesentium. Maxime quas nostrum maiores in quam. Id aut dolorum veniam vero dolore dolores similique iste sapiente, ab delectus nostrum temporibus eligendi. Debitis, non! Necessitatibus!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui placeat delectus odio in minus eaque culpa. Modi incidunt, perferendis est unde aut cumque, dolore inventore obcaecati totam esse laboriosam nesciunt facere tempore, nisi molestiae corporis consequatur. Cum autem possimus reprehenderit, optio, assumenda molestiae reiciendis, voluptatibus impedit temporibus rem unde officiis.</p>
+    
+    <!-- Para gerar textos, insira após a palavra Lorem um número que será referente a quantidade de palavras que você deseja, ou seja, Lorem100 irá gerar um texto com 100 palavras. Lorem1000, 1000 palavras e assim por diante. -->
+</body>
+</html>

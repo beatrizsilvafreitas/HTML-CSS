@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+    <style>
+        *{ /*Configuração global da CSS*/
+            height: 100%;
+        }
+
+        body {
+            background-image:linear-gradient(to right, white 2%, yellow 10%, green 20%);
+            background-attachment: fixed;
+        }
+        
+        /* to right,  to left, to bottom, to top    ou
+        45 deg, - 45deg, 90 deg, - 90 deg */
+
+        body {
+            background-image: radial-gradient(circle, white, yellow, green);
+            background-attachment: fixed;
+        }
+        
+        /* Também pode ser usado o Adobe color  e similares para definir as cores do gradiente. */
+    </style>
+    
+
+</body>
+</html>

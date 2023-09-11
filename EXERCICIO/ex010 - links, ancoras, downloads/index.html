@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trabalhando com links e âncoras</title>
+</head>
+<body>
+   <h1>Usando links externos</h1> 
+   <hr>
+   <p>Para inserir um link externo digite a <strong>tag A</strong> e preencha o <strong>HREF</strong> com a URL do site, por exemplo, "https:/google.com/". </p>
+   <p>Para que ao clicar no link seja direcionado para uma nova aba insira <u>dentro</u> da tag A:</p>
+   <ul>
+   <li>target="_blank"</li>
+   <li>rel="external"</li>
+   </ul>
+   <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repertório público no GitHub.</a></p>
+   <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external"> canal gratuito no Youtube!</a></p>
+
+   <h1>Usando links internos</h1>
+   <hr>
+   <p>Com o atalho <strong>CTRL + barra de espaço</strong> escolher qual arquivo.html você deseja adicionar.</p>
+   <p>Exemplos:</p>
+   <p>Esta é a primeira página do site. Caso queira, você pode acessar a minha <a href="pag002.html" rel="next">segunda página.</a></p>
+   <p>Você também pode acessar a minha <a href="noticias/pag003.html">página de notícias</a>.</p>
+   <br>
+   <p>Para informar que o link será a próxima página digite: rel="next"</p>
+   <p>Para informar que o link será a página anterior digite: rel="prev"</p>
+   <p>Para link de patrocínio é recomendado: rel="nofollow"</p>
+   <br>
+   <p><strong>Observação!</strong></p>
+   <p>Para abrir o link na própria aba do site digite dentro da tag A:</p>
+   <p>target="_self"</p>
+   <br>
+   <p>Para informar que o arquivo está em uma pasta anterior digite <u>tag a href="<strong>../nomedoarquivo.html</u></strong>".</p>
+   <p>Para cada sequência de <strong>../nomedoarquivo.html</strong> o código volta uma página.</p>
+
+   <h1>Links para download</h1>
+   <ul>
+    <li><a href="linkdownload/DIT.pdf" target="_blank"><img src="patinhas-favicon.png" alt="" style="width: 20px; height: 20px; border-radius: 20px;"> Baixar arquivo em pdf</a></li>
+    <li><a href="linkdownload/DIT.rar"><img src="patinhas-favicon.png" alt="" style="width: 20px; height: 20px; border-radius: 20px;"> Baixar arquivo formato zip</a></li>
+   </ul>
+
+</body>
+</html>

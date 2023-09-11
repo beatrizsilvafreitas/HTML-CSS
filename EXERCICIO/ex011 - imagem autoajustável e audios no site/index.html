@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens que se adaptam sozinhas</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir essa imagem em vários dipositivos diferentes ou <u>simplesmente aumente e diminua o tamanho do seu navegador.</u></p>
+    <h2>Começando pela imagem maior para a menor :</h2>
+    <ol>
+        <li>Digite a tag PICTURE</li>
+        <li>Dentro da anterior digite a tag IMG - preenche com os dados da maior foto</li>
+        <li>Em cima da tag IMG digite a tag SOURCE: MEDIA: TYPE</li>
+        <li>Prencha com dados da foto menor que a anterior</li>
+        <li>Lembre de alterar min-width para max-width</li>
+        <li>coloque o tamanho da imagem maior + 50px de espaçamento(opcional)</li>
+        <li>faça o mesmo com outras fotos menores, colocando seu código acima das menores</li>
+    </ol>
+
+    <code>
+        <p>TAG picture</p>
+        <p>source media="(<strong>MAX</strong>-width:750px)" srcset="imagens/foto-p.png" type="image/png"</p>
+        <p>source media="(<strong>MAX</strong>-width:1050px)" srcset="imagens/foto-m.png" type="image/png"</p>
+        <p>img src="imagens/foto-g.png" alt="imagem grande flexível"</p>
+        <p>TAG picture</p>
+    </code>
+    <br>
+
+     <h3>Agora faça os testes!</h3>
+
+    <!-- Código de fato: -->
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem grande flexível">
+    </picture>
+
+    <!-- FORMA MAIS SIMPLES -->
+    <h1>Reproduzindo Áudio</h1>
+    <h2>Forma mais simples:</h2>
+    <ol>
+        <li>Digite a tag AUDIO</li>
+        <li>Preencha SRC com o nome da mídia</li>
+        <li>Acrescente: controls; autoplay;</li>
+    </ol>
+    <p>Vamos aprender a reproduzir áudios em HTML 5.</p>
+    <audio src="Guess I_ll Never Know.wav - TrackTribe.mp3" controls autoplay></audio>
+
+    <!-- FORMA MAIS AMPLA  -->
+    <h2>Forma mais ampla:</h2>
+    <ol>
+        <li>Digite a tag AUDIO e apague o SRC</li>
+        <li>Dentro da tag AUDIO digite SRC:SZ</li>
+        <li>Em TYPE coloque AUDIO/tipo do arquivo</li>
+        <li>Acrescente: preload; controls; autoplay</li>
+    </ol>
+    <p> Vamos aprender a reproduzir áudios em HTML 5.</p>
+    <audio preload="metadata" autoplay controls loop>
+    <source src="Guess I_ll Never Know.wav - TrackTribe.mp3" type="audio/mpeg">
+    </audio>
+    <p>Infelizmente seu navegador não consegue reproduzir áudio. ☹️</p>
+    <a href="Guess I_ll Never Know.wav - TrackTribe.mp3">Clique aqui</a> para fazer download do arquivo MP3.
+
+    <!-- OBS: aceita formato de arquivos de mp3, wav e ogg. -->
+
+</body>
+</html>

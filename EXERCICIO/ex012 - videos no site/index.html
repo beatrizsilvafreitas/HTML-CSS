@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <h2>Forma mais simples</h2>
+    <ol>
+        <li>Tag VIDEO</li>
+        <li>Dentro da tag em SRC coloca o nome do vídeo</li>
+        <li>Coloca o WIDTH desejado</li>
+        <li>Acrescenta CONTROLS</li>
+        <li>Coloque MUTED antes do AUTOPLAY para o vídeo começar automaticamente</li>
+    </ol>
+
+    <video src="videos/Video-Bebidas-alterado-webM.webm" width="280" controls muted autoplay loop poster="imagens/thumbnail.png"></video>
+    <!-- Para colocar uma thumbnail no vídeo dentro da tag VIDEO coloque POSTER -->
+    <!-- A thumbnail só aparece se retirar o muted antes do autoplay mas prefiro assim -->
+
+    <h2>Forma mais ampla</h2>
+    <ol>
+        <li>Tag VIDEO</li>
+        <li>Apaga a SRC e dentro da tag digita SRC:SZ</li>
+        <li>Preenche as informações</li>
+        <li>Colocar o WIDTH desejado</li>
+        <li>Acrescentar na Tag: MUTED; AUTOPLAY; LOOP</li>
+    </ol>
+    <video controls width="280" muted autoplay loop poster="imagens/thumbnail.png">
+        <source src="videos/Video-Bebidas-alterado-mp4.mp4" type="video/mp4">
+        <source src="videos/Video-Bebidas-alterado-mkv.mkv" type="video/mkv">
+        <source src="videos/Video-Bebidas-alterado-webM.webm" type="video/webm">
+        <!-- Há também o formato de vídeo ogv/ogg utilizado em dispositivos da Apples. -->
+        <p> Seu navegador não tem compatibilidade com reprodução de vídeos. </p>
+    </video>
+
+    <h1>Inserindo Vídeos Externos</h1>
+    <ol>
+        <li>Escolha um vídeo no YouTube</li>
+        <li>Clique em compartilhar</li>
+        <li>Depois em incorporar vídeo</li>
+        <li>Clicar na opção copiar</li>
+        <li>Colar no Visual Code</li>
+    </ol>
+    <p>OBS.: Outra opção para vídeos externos é o Vimeo.
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_aVHf_jmWk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+</body>
+</html>
