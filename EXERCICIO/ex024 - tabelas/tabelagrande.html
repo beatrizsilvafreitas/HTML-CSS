@@ -19,6 +19,17 @@
         table {
             width: 36vw;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
+        }
+
+        tbody > tr:hover {
+            border: 1.5px solid rgb(23, 9, 226);
+            font-weight: bolder;
         }
 
         td, th {
@@ -35,16 +46,21 @@
             color: white;
         }
 
-        /* EFEITO ZEBRADO NA TABELA VAI INTERCALAR AS CORES
+        /* EFEITO ZEBRADO NA TABELA USANDO A PSEUDOCLASS :NTH-CHILD()
+         NESSE CASO, A CADA DOIS UM VAI TER ESSE EFEITO
         tbody > tr:nth-child(2n) { 
             background-color: lightgray;
         } */
 
-        EFEITO ZEBRADO NA TABELA TODO N 
+        /* EFEITO ZEBRADO NA TABELA - ODD:TODO NÚMERO ÍMPAR VAI TER ESSE EFEITO */
         tbody > tr:nth-child(odd) {
             background-color: lightblue;
         }
 
+        /* EFEITO ZEBRADO NA TABELA - EVEN:TODO NÚMERO PAR VAI TER ESSE EFEITO */
+        tbody > tr:nth-child(even) {
+            background-color: rgb(253, 253, 140);
+        }
 
     </style>
 </head>
@@ -155,5 +171,10 @@
             </tr>
         </tfoot>
      </table>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, vel! Consequuntur quibusdam consectetur tenetur aut nisi nostrum ex? In dignissimos incidunt dicta voluptate culpa, voluptatibus quia qui amet reiciendis veritatis ea nam quaerat. Minima quaerat debitis doloribus quo tempore distinctio, reprehenderit repudiandae suscipit eligendi quia quam magni ipsa aspernatur exercitationem repellendus voluptatum cumque? Dolorum doloremque voluptates recusandae autem, minus eos dolores officia illum! Exercitationem eligendi ab mollitia accusamus ullam aut, saepe ex! Dolor tempore molestias, sit, repellat porro totam in beatae distinctio consequuntur ea deserunt? Laudantium corrupti magni explicabo dolore error, unde itaque, nisi optio eveniet eius perspiciatis veritatis dignissimos animi odit architecto reprehenderit et, quam ullam est? Deserunt, iste suscipit dolorem vero praesentium culpa voluptatum nisi exercitationem aliquid, quibusdam placeat est officia quasi similique assumenda! Necessitatibus, excepturi non recusandae hic officia esse dolor. Provident nisi autem nemo obcaecati consectetur, doloribus cupiditate suscipit tenetur tempora modi magnam deserunt debitis iure tempore sapiente saepe repellat ad asperiores temporibus alias nobis nesciunt! Accusamus mollitia laborum omnis perspiciatis sed officiis ipsam consectetur delectus. Non doloremque voluptate mollitia inventore aut illo cupiditate impedit incidunt voluptatem quae neque officia ex adipisci modi quasi cum asperiores amet iste, illum eveniet in, doloribus velit consequuntur assumenda. Delectus!</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, vel! Consequuntur quibusdam consectetur tenetur aut nisi nostrum ex? In dignissimos incidunt dicta voluptate culpa, voluptatibus quia qui amet reiciendis veritatis ea nam quaerat. Minima quaerat debitis doloribus quo tempore distinctio, reprehenderit repudiandae suscipit eligendi quia quam magni ipsa aspernatur exercitationem repellendus voluptatum cumque? Dolorum doloremque voluptates recusandae autem, minus eos dolores officia illum! Exercitationem eligendi ab mollitia accusamus ullam aut, saepe ex! Dolor tempore molestias, sit, repellat porro totam in beatae distinctio consequuntur ea deserunt? Laudantium corrupti magni explicabo dolore error, unde itaque, nisi optio eveniet eius perspiciatis veritatis dignissimos animi odit architecto reprehenderit et, quam ullam est? Deserunt, iste suscipit dolorem vero praesentium culpa voluptatum nisi exercitationem aliquid, quibusdam placeat est officia quasi similique assumenda! Necessitatibus, excepturi non recusandae hic officia esse dolor. Provident nisi autem nemo obcaecati consectetur, doloribus cupiditate suscipit tenetur tempora modi magnam deserunt debitis iure tempore sapiente saepe repellat ad asperiores temporibus alias nobis nesciunt! Accusamus mollitia laborum omnis perspiciatis sed officiis ipsam consectetur delectus. Non doloremque voluptate mollitia inventore aut illo cupiditate impedit incidunt voluptatem quae neque officia ex adipisci modi quasi cum asperiores amet iste, illum eveniet in, doloribus velit consequuntur assumenda. Delectus!</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, vel! Consequuntur quibusdam consectetur tenetur aut nisi nostrum ex? In dignissimos incidunt dicta voluptate culpa, voluptatibus quia qui amet reiciendis veritatis ea nam quaerat. Minima quaerat debitis doloribus quo tempore distinctio, reprehenderit repudiandae suscipit eligendi quia quam magni ipsa aspernatur exercitationem repellendus voluptatum cumque? Dolorum doloremque voluptates recusandae autem, minus eos dolores officia illum! Exercitationem eligendi ab mollitia accusamus ullam aut, saepe ex! Dolor tempore molestias, sit, repellat porro totam in beatae distinctio consequuntur ea deserunt? Laudantium corrupti magni explicabo dolore error, unde itaque, nisi optio eveniet eius perspiciatis veritatis dignissimos animi odit architecto reprehenderit et, quam ullam est? Deserunt, iste suscipit dolorem vero praesentium culpa voluptatum nisi exercitationem aliquid, quibusdam placeat est officia quasi similique assumenda! Necessitatibus, excepturi non recusandae hic officia esse dolor. Provident nisi autem nemo obcaecati consectetur, doloribus cupiditate suscipit tenetur tempora modi magnam deserunt debitis iure tempore sapiente saepe repellat ad asperiores temporibus alias nobis nesciunt! Accusamus mollitia laborum omnis perspiciatis sed officiis ipsam consectetur delectus. Non doloremque voluptate mollitia inventore aut illo cupiditate impedit incidunt voluptatem quae neque officia ex adipisci modi quasi cum asperiores amet iste, illum eveniet in, doloribus velit consequuntur assumenda. Delectus!</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, vel! Consequuntur quibusdam consectetur tenetur aut nisi nostrum ex? In dignissimos incidunt dicta voluptate culpa, voluptatibus quia qui amet reiciendis veritatis ea nam quaerat. Minima quaerat debitis doloribus quo tempore distinctio, reprehenderit repudiandae suscipit eligendi quia quam magni ipsa aspernatur exercitationem repellendus voluptatum cumque? Dolorum doloremque voluptates recusandae autem, minus eos dolores officia illum! Exercitationem eligendi ab mollitia accusamus ullam aut, saepe ex! Dolor tempore molestias, sit, repellat porro totam in beatae distinctio consequuntur ea deserunt? Laudantium corrupti magni explicabo dolore error, unde itaque, nisi optio eveniet eius perspiciatis veritatis dignissimos animi odit architecto reprehenderit et, quam ullam est? Deserunt, iste suscipit dolorem vero praesentium culpa voluptatum nisi exercitationem aliquid, quibusdam placeat est officia quasi similique assumenda! Necessitatibus, excepturi non recusandae hic officia esse dolor. Provident nisi autem nemo obcaecati consectetur, doloribus cupiditate suscipit tenetur tempora modi magnam deserunt debitis iure tempore sapiente saepe repellat ad asperiores temporibus alias nobis nesciunt! Accusamus mollitia laborum omnis perspiciatis sed officiis ipsam consectetur delectus. Non doloremque voluptate mollitia inventore aut illo cupiditate impedit incidunt voluptatem quae neque officia ex adipisci modi quasi cum asperiores amet iste, illum eveniet in, doloribus velit consequuntur assumenda. Delectus!</p>
 </body>
 </html>
