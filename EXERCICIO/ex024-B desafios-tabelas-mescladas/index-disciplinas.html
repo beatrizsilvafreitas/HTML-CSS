@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Disciplinas</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        table {
+            width: 40vw;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            margin: 16px;
+        }
+        th, td {
+            border: 1.6px solid black;
+            padding: 8px;
+        }
+
+        thead, .media {
+            background-color: gray;
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.479);
+        }
+
+        .media {
+            text-align: left;
+        }
+
+        .result {
+            text-align: center;
+        }
+
+        .discip {
+            text-align: left;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <!-- <th></th> -->
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <!-- <th></th> -->
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <!-- <th></th> -->
+                <!-- <th></th> -->
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="4"><strong>Exatas</strong></td>
+                <td class="discip">Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <!-- <td></td> -->
+                <td class="discip">Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <!-- <td></td> -->
+                <td class="discip">Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <!-- <td></td> -->
+                <td class="discip">Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr class="media">
+                <td colspan="4"><strong>Média de Exatas</strong></td>
+                <td class="result"><strong>0.0</strong></td>
+            </tr>
+
+            <tr>
+                <td rowspan="4"><strong>Humanas</strong></td>
+                <td class="discip">História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <!-- <td></td> -->
+                <td class="discip">Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <!-- <td></td> -->
+                <td class="discip">Sociologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <!-- <td></td> -->
+                <td class="discip">Filosofia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr class="media">
+                <td colspan="4"><strong>Média de Humanas</strong></td>
+                <td class="result"><strong>0.0</strong></td>
+            </tr>
+
+            <tr>
+                <td rowspan="2"><strong>Linguagens</strong></td>
+                <td class="discip">Português</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <!-- <td></td> -->
+                <td class="discip">Inglês</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr class="media">
+                <td colspan="4"><strong>Média de Linguagens</strong></td>
+                <td class="result"><strong>0.0</strong></td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
